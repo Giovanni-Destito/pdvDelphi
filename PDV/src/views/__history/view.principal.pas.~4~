@@ -1,0 +1,43 @@
+unit view.principal;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls,
+  Vcl.Imaging.pngimage;
+
+type
+  TviewPrincipal = class(TForm)
+    pnlTopo: TPanel;
+    pnlLinhaRodape: TPanel;
+    pnlRodape: TPanel;
+    pnlConsultaProduto: TPanel;
+    pnlListaProdutos: TPanel;
+    pnlBackground: TPanel;
+    pnlTopConsultaProduto: TPanel;
+    pnlTituloConultaProdutos: TPanel;
+    edtCodigoBarras: TEdit;
+    lblCodigoBarras: TLabel;
+    pnlConsuiltaProduto: TPanel;
+    pnlNomeProduto: TPanel;
+    imgLogo: TImage;
+    pnlLogoEmpresa: TPanel;
+    imgLogoEmpresaBranca: TImage;
+    pnlLogo: TPanel;
+    imgLogoEmpresaLaranja: TImage;
+    procedure imgLogoEmpresaBrancaClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  viewPrincipal: TviewPrincipal;
+
+implementation
+
+{$R *.dfm}
+
+
